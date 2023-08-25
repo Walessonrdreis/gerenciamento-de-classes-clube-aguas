@@ -42,22 +42,23 @@ h3 span {
     margin-right: 5px;
 }
 
-.requisitos .req-i ,
-.requisitos .req-ii  {
+.requisitos .req-i,
+.requisitos .req-ii {
     display: flex;
     flex-direction: column;
 
 
 }
 
-.requisitos .req-i  li,
+.requisitos .req-i li,
 .requisitos .req-ii li {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.requisitos ol li span {
+.requisitos ol li.reqs span,
+.requisitos ol li.reqs-leituras span {
 
     width: 25px;
     height: 25px;
@@ -73,7 +74,7 @@ h3 span {
 }
 
 
-  
+
 
 ul.req-leituras {
 
@@ -84,8 +85,29 @@ ul.req-leituras {
 
 
 }
+.reqs{
+    display: flex;
+    border: 1px solid;
+    flex-wrap: wrap;
+}
+.reqs h4{
+    width: 70%;
+}.reqs ol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70vw;
+ 
+    margin-left:40px ;
+}
+.reqs ol li{
+margin-right: 40px;
+display: flex;
+flex-wrap: wrap;
+}
 
 .reqs,
+.reqs-leituras,
 .req-leituras-biblicas {
     width: 100%;
 
