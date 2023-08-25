@@ -1,1 +1,1 @@
-# gerenciamento-de-classes-clube-aguas
+# Projeto Classe digital Clube Águas
