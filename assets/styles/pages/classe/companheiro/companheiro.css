@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
 }
 
@@ -30,7 +29,6 @@ li.requisitos {
     padding-left: 20px;
 }
 
-
 h3 {
     border: 2px solid #fff;
     color: aliceblue;
@@ -42,18 +40,22 @@ h3 {
     margin-left: -20px;
    
 }
+label{
+    cursor: pointer;
+    user-select: none;
+}
 
 h3 span {
     margin-right: 5px;
 }
 .avancada h3{
     width: 90vw;
+    max-width: 80vw;
     font-size: 14px;
 }
 .avancada h3 span{
     font-size: 8px;
 }
-
 .requisitos ol li.reqs span,
 .requisitos ol li.reqs-leituras span {
 
@@ -70,10 +72,6 @@ h3 span {
     color: aliceblue;
     background-color: brown;
 }
-
-
-
-
 .req-leituras {
 
     display: flex;
@@ -117,14 +115,11 @@ hr{
     margin: 20px 0;
 }
 
-
 .reqs ol {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 70vw;
-    
-   
 }
 
 .reqs ol li {
@@ -154,8 +149,6 @@ hr{
     margin-bottom: 20px;
     max-width: 1080px;
     width: 100%;
-    
-    
 
 }
 
@@ -174,11 +167,9 @@ hr{
 
 }
 
-
 .registro input.ipt-text {
     width: 65vw;
     max-width: 250px;
-
     border-top: none;
     border-left: none;
     border-right: none;
@@ -187,9 +178,7 @@ hr{
 }
 .ipt-file{
     width: 200px;
-   
 }
-
 
 .registro input.salvar{
     border: 2px solid white;
@@ -228,3 +217,42 @@ hr{
     
     counter-increment: item;
 }
+.g-i,.de-ii,.so-iii,.da-iv,.saf-v,.ol-vi,.en-vii,.aa-viii,.ev-ix,.cace{
+    cursor: pointer;
+    display: none;
+   
+}
+#toggleCheckbox {
+   display: none;
+  }
+
+  .toggleButton {
+  
+    padding:10px  80% 10px 0;
+  ;}
+  .toggleButton2{
+   display: inline;
+   padding:10px 60% 10px 0;
+    
+  
+
+  }
+
+input.inpt {
+    display: none;
+}
+ 
+ 
+  #toggleCheckbox:checked ~ .g-i, 
+  #toggleCheckbox2:checked ~ .de-ii, 
+  #toggleCheckbox3:checked ~ .so-iii,
+  #toggleCheckbox4:checked ~ .da-iv,
+  #toggleCheckbox5:checked ~ .saf-v,
+  #toggleCheckbox6:checked ~ .ol-vi,
+  #toggleCheckbox7:checked ~ .en-vii,
+  #toggleCheckbox8:checked ~ .aa-viii,
+  #toggleCheckbox9:checked ~ .ev-ix,
+  #toggleCheckbox10:checked ~ .cace{
+    display: block;
+  }
+
