@@ -2,26 +2,32 @@
 
 * {
     box-sizing: border-box;
-   
+    margin: 0;
     padding: 0;
 }
 
 body {
     font-size: 14px;
     line-height: 40px;
-    margin: auto 1%;
+    min-width: 375px;
     background-image: url(../../../../img/fundo.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+    width: calc(100vw);
     font-family: 'Short Stack', cursive;
+    margin: 0 auto;
+ 
 }
-
+main{
+    margin-top: 50px;
+    width: 100%;
+    padding: 0;
+}
 li.requisitos {
 
     list-style: none;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 
@@ -29,33 +35,23 @@ h3 {
     border: 2px solid #fff;
     color: aliceblue;
     background-color: brown;
-    width: 40vw;
-    min-width: 350px;
+    width: 60vw;
+    min-width: 250px;
     border-radius: 0 20px 0 0;
-    margin-left: -150px;
-    padding-left: 150px;
-
-
-
+    padding-left: 40px;
+    margin-left: -20px;
+   
 }
 
 h3 span {
     margin-right: 5px;
 }
-
-.requisitos .req-i,
-.requisitos .req-ii {
-    display: flex;
-    flex-direction: column;
-
-
+.avancada h3{
+    width: 90vw;
+    font-size: 14px;
 }
-
-.requisitos .req-i li,
-.requisitos .req-ii li {
-    display: flex;
-    flex-wrap: wrap;
-
+.avancada h3 span{
+    font-size: 8px;
 }
 
 .requisitos ol li.reqs span,
@@ -68,6 +64,7 @@ h3 span {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     margin-right: 10px;
     border: 2px solid #fff;
     color: aliceblue;
@@ -77,32 +74,56 @@ h3 span {
 
 
 
-ul.req-leituras {
+.req-leituras {
 
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    width: 100%;
+    max-width: 300px;
+    padding-left: 50px;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: -15px;
 }
 
 .reqs {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    min-width: 330px;
-    text-align: justify;
+    width: 100%;
+    min-width: 375px;
+    text-align: left;
     padding-left:20px ;
     padding-right: 90px;
+    box-sizing: border-box;
+   
+}
+hr{
+    width: 49vw;
+    background-color: brown;
+    height: 10px;
+    position: relative;
+    left: -30%;
+    min-width: 250px;
+    border: 2px solid #fff;
+    border-radius: 0 0 10px 0;
+    margin-bottom: 2px;
+}
+.reqs h4 {
+    display: flex;
+    align-items: first baseline;
+    text-align: left;
+    width: 100%;
+    min-width: 300px;
+    margin: 20px 0;
 }
 
-.reqs h4 {
-    margin-left: 5px;
-}
 
 .reqs ol {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 70vw;
+    
    
 }
 
@@ -117,43 +138,6 @@ ul.req-leituras {
     width: 100%;
     display: flex;
     align-items: first baseline;
-
-}
-.list-ord{
-    padding-left: 40px;
-    
-}
-
-
-
-h4 {
-    margin: 50px 0 0 40px;
-    width: 85%;
-
-}
-.sub-list{
-
-   margin-left: 20px;
-    
-   
-}
-
-.sub-list li {
-
-
-    height: 60px;
-    align-items: first baseline;
-    flex-wrap: wrap;
-  
-   
-   
-    
-}
-.sub-list li input{
-    width: 5%;
-}
-.sub-list li h5{
-    width: 90%;
 }
 
 
@@ -167,9 +151,11 @@ h4 {
     gap: 10px;
     margin-left: 8vw;
     padding: 0;
-    margin-top: -20px;
+    margin-bottom: 20px;
     max-width: 1080px;
     width: 100%;
+    
+    
 
 }
 
@@ -183,7 +169,7 @@ h4 {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: #000 2px solid;
+    border-bottom: brown 2px solid;
     background: transparent;
 
 }
@@ -196,11 +182,12 @@ h4 {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: #000 2px solid;
+    border-bottom: brown 2px solid;
     background: transparent;
 }
 .ipt-file{
     width: 200px;
+   
 }
 
 
@@ -210,4 +197,34 @@ h4 {
     border-radius: 5px;
     background-color:brown;
     color: white;
+    margin-right: 15px;
+}
+
+.sub-list {
+    counter-reset: item;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+ 
+}
+
+.sub-list li:nth-child(odd){
+    display: inline;
+    
+}
+.sub-list li:nth-child(even){
+    display: inline;
+    
+}
+.sub-list li input{
+    margin-right: 30px;
+}
+
+.sub-list li::before{
+    content: counter(item, lower-latin) ")";
+    padding-left: 25px;
+    position: absolute;
+    
+    counter-increment: item;
 }
