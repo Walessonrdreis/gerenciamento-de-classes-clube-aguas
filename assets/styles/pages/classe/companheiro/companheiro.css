@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
+   
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: calc(100vw);
+    width: calc(100vw-10px);
     font-family: 'Short Stack', cursive;
     margin: 0 auto;
  
