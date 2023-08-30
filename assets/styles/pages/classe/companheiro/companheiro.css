@@ -242,7 +242,7 @@ hr{
 input.inpt {
     display: none;
 }
- 
+ :first-chil :nth-child(1)
  
   #toggleCheckbox:checked ~ .g-i, 
   #toggleCheckbox2:checked ~ .de-ii, 
