@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
+
    
 }
 
@@ -32,7 +33,7 @@ main{
 }
 .requisitos {
     position: relative;
-    list-style: none;
+    width: 90%;
     padding-left: 20px;
 }
 
@@ -44,7 +45,7 @@ h3 {
     min-width: 350px;
     border-radius: 0 20px 0 0;
     padding-left: 40px;
-    margin-left: -20px;
+    margin-left: -40px;
    
 }
 label{
@@ -99,6 +100,7 @@ h3 span {
     padding-left:20px ;
     padding-right: 90px;
     box-sizing: border-box;
+    margin-left: -39px;
    
 }
 hr{
