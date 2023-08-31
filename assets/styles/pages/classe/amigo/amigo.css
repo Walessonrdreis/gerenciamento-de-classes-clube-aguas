@@ -1,16 +1,269 @@
 
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Short+Stack&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+   
+}
+
+body {
+    font-size: 14px;
+    line-height: 40px;
+    min-width: 375px;
     background-image: url(../../../../img/fundo.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
+    width: calc(100vw-10px);
+    font-family: 'Short Stack', cursive;
+    margin: 0 auto;
+ 
+}
+main{
+    margin-top: 50px;
+    width: 100%;
+    padding: 0;
+}
+.req-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.requisitos {
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+}
+
+h3 {
+    border: 2px solid #fff;
+    color: aliceblue;
+    background-color: rgb(79, 79, 221);
+    width: 60vw;
+    min-width: 350px;
+    border-radius: 0 20px 0 0;
+    padding-left: 40px;
+    margin-left: -20px;
+   
+}
+label{
+    cursor: pointer;
+    user-select: none;
+}
+
+h3 span {
+    margin-right: 5px;
+}
+.avancada h3{
+    
+    font-size: 14px;
+}
+.avancada h3 span{
+    font-size: 8px;
+}
+.requisitos ol li.reqs span,
+.requisitos ol li.reqs-leituras span {
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    color: aliceblue;
+    background-color: rgb(79, 79, 221);
+}
+.req-leituras {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    padding-left: 50px;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: -15px;
+}
+
+.reqs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 375px;
+    text-align: left;
+    padding-left:20px ;
+    padding-right: 90px;
+    box-sizing: border-box;
+   
+}
+hr{
+    width: 49vw;
+    background-color: rgb(79, 79, 221);
+    height: 10px;
+    position: relative;
+    left: -30%;
+    min-width: 250px;
+    border: 2px solid #fff;
+    border-radius: 0 0 10px 0;
+    margin-bottom: 2px;
+}
+.reqs h4 {
+    display: flex;
+    align-items: first baseline;
+    text-align: left;
+    width: 100%;
+    min-width: 300px;
+    margin: 20px 0;
+}
+
+.reqs ol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+.reqs ol li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reqs,
+.reqs-leituras,
+.req-leituras-biblicas {
+    width: 100%;
+    display: flex;
+    align-items: first baseline;
+}
+
+
+/*Form registro*/
+.registro {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-left: 8vw;
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 1080px;
+    width: 100%;
 
 }
-input{
+
+.registro h5 {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+.registro input.ipt-date {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: rgb(79, 79, 221) 2px solid;
+    background: transparent;
+
+}
+
+.registro input.ipt-text {
+    width: 65vw;
+    max-width: 250px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: rgb(79, 79, 221) 2px solid;
+    background: transparent;
+}
+.ipt-file{
+    width: 200px;
+}
+
+.registro input.salvar{
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 5px;
+    background-color:rgb(79, 79, 221);
+    color: white;
+    margin-right: 15px;
+}
+
+.sub-list {
+    counter-reset: item;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+ 
+}
+
+.sub-list li:nth-child(odd){
+    display: inline;
+    
+}
+.sub-list li:nth-child(even){
+    display: inline;
+    
+}
+.sub-list li input{
+    margin-right: 30px;
+}
+
+.sub-list li::before{
+    content: counter(item, lower-latin) ")";
+    padding-left: 25px;
+    position: absolute;
+    
+    counter-increment: item;
+}
+.g-i,.de-ii,.so-iii,.da-iv,.saf-v,.ol-vi,.en-vii,.aa-viii,.ev-ix,.cace{
+    cursor: pointer;
+    display: none;
+   
+}
+#toggleCheckbox {
+display: none;
+  }
+
+  .toggleButton {
+    position: absolute;
+    
+    min-width: 350px;
+    top: 0;
+    left: 0;
+    padding:45px  58% 10px 0;
+  }
+  .toggleButton2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 350px;
+   padding:45px 58% 15px 0;
+    
+
+  }
+
+input.inpt {
     display: none;
 }
-.tema h3{
-    border: 2px solid #fff;
-    width: 30vw;
-}
+ 
+  #toggleCheckbox:checked ~ .g-i, 
+  #toggleCheckbox2:checked ~ .de-ii, 
+  #toggleCheckbox3:checked ~ .so-iii,
+  #toggleCheckbox4:checked ~ .da-iv,
+  #toggleCheckbox5:checked ~ .saf-v,
+  #toggleCheckbox6:checked ~ .ol-vi,
+  #toggleCheckbox7:checked ~ .en-vii,
+  #toggleCheckbox8:checked ~ .aa-viii,
+  #toggleCheckbox9:checked ~ .ev-ix,
+  #toggleCheckbox10:checked ~ .cace{
+    display: block;
+  }
+
