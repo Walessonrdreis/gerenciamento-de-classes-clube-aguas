@@ -235,14 +235,12 @@ hr{
    display: inline;
    padding:10px 60% 10px 0;
     
-  
 
   }
 
 input.inpt {
     display: none;
 }
- :first-chil :nth-child(1)
  
   #toggleCheckbox:checked ~ .g-i, 
   #toggleCheckbox2:checked ~ .de-ii, 
