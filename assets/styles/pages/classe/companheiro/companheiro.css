@@ -24,8 +24,8 @@ main{
     width: 100%;
     padding: 0;
 }
-li.requisitos {
-
+.requisitos {
+    position: relative;
     list-style: none;
     padding-left: 20px;
 }
@@ -35,7 +35,7 @@ h3 {
     color: aliceblue;
     background-color: brown;
     width: 60vw;
-    min-width: 250px;
+    min-width: 350px;
     border-radius: 0 20px 0 0;
     padding-left: 40px;
     margin-left: -20px;
@@ -224,16 +224,23 @@ hr{
    
 }
 #toggleCheckbox {
-   display: none;
+display: none;
   }
 
   .toggleButton {
-  
-    padding:10px  80% 10px 0;
+    position: absolute;
+    
+    min-width: 350px;
+    top: 0;
+    left: 0;
+    padding:45px  58% 10px 0;
   ;}
   .toggleButton2{
-   display: inline;
-   padding:10px 60% 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 350px;
+   padding:45px 58% 15px 0;
     
 
   }
