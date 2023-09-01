@@ -93,12 +93,13 @@ h3 span {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-width: 375px;
+    min-width: 365px;
     text-align: left;
     padding-left:20px ;
     padding-right: 90px;
     box-sizing: border-box;
-    margin-left: -39px;
+    margin-left: -15px;
+    
    
 }
 hr{
@@ -119,6 +120,7 @@ hr{
     width: 100%;
     min-width: 300px;
     margin: 20px 0;
+   
 }
 
 .reqs ol {
@@ -197,7 +199,7 @@ hr{
 
 .sub-list {
     counter-reset: item;
-    margin-left: 30px;
+    padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     width: auto;
